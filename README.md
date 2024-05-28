@@ -1,12 +1,25 @@
-# Starter Next/Hardhat Project
+# Ethereum Smart Contract Assessment
 
-After cloning the github, you will want to do the following to get the code running on your computer.
+This project, developed by Gerard Jose for Metacrafters, features a basic Ethereum smart contract written in Solidity.
 
-1. Inside the project directory, in the terminal type: npm i
-2. Open two additional terminals in your VS code
-3. In the second terminal type: npx hardhat node
-4. In the third terminal, type: npx hardhat run --network localhost scripts/deploy.js
-5. Back in the first terminal, type npm run dev to launch the front-end.
+## Features
 
-After this, the project will be running on your localhost. 
-Typically at http://localhost:3000/
+Depositing Funds: Users can deposit Ether into the contract.
+Withdrawing Funds: Users can withdraw their deposited Ether from the contract.
+Burning Funds: A specified amount of Ether can be burned, effectively reducing the total supply of Ether.
+
+### Installing Dependencies
+
+- First terminal type: npm i
+- second terminal type: npx hardhat node
+- third terminal, type: npx hardhat run --network localhost scripts/deploy.js
+- Back in the first terminal, type npm run dev to launch the front-end.
+- After this, the project will be running on your localhost. Typically at http://localhost:3000/
+
+  Gerard Manzano
+[@Chill Code](https://www.youtube.com/channel/UCqnpVDK-Ym41W1WDvBMmN6w)
+
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE.md file for details
