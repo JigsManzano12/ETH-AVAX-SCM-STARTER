@@ -4,9 +4,9 @@ This project, developed by Gerard Jose for Metacrafters, features a basic Ethere
 
 ## Features
 
--Depositing Funds: Users can deposit Ether into the contract.
--Withdrawing Funds: Users can withdraw their deposited Ether from the contract.
--Burning Funds: A specified amount of Ether can be burned, effectively reducing the total supply of Ether.
+- Depositing Funds: Users can deposit Ether into the contract.
+- Withdrawing Funds: Users can withdraw their deposited Ether from the contract.
+- Burning Funds: A specified amount of Ether can be burned, effectively reducing the total supply of Ether.
 
 ### Installing Dependencies
 
