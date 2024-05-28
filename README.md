@@ -16,10 +16,13 @@ Burning Funds: A specified amount of Ether can be burned, effectively reducing t
 - Back in the first terminal, type npm run dev to launch the front-end.
 - After this, the project will be running on your localhost. Typically at http://localhost:3000/
 
-  Gerard Manzano
+## Authors
+
+Gerard Manzano
 [@Chill Code](https://www.youtube.com/channel/UCqnpVDK-Ym41W1WDvBMmN6w)
 
 
 ## License
 
 This project is licensed under the MIT License - see the LICENSE.md file for details
+
