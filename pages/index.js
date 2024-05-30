@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { ethers } from "ethers";
 import atm_abi from "../artifacts/contracts/Assessment.sol/Assessment.json";
-
+  //Gerard
 export default function HomePage() {
   const [ethWallet, setEthWallet] = useState(undefined);
   const [account, setAccount] = useState(undefined);
@@ -16,7 +16,7 @@ export default function HomePage() {
     if (window.ethereum) {
       setEthWallet(window.ethereum);
     }
-
+    //Gerard
     if (ethWallet) {
       const account = await ethWallet.request({ method: "eth_accounts" });
       handleAccount(account);
@@ -37,7 +37,7 @@ export default function HomePage() {
       alert('MetaMask wallet is required to connect');
       return;
     }
-
+    //Gerard
     const accounts = await ethWallet.request({ method: 'eth_requestAccounts' });
     handleAccount(accounts);
 
@@ -65,7 +65,7 @@ export default function HomePage() {
       getBalance();
     }
   }
-
+  //Gerard
   const withdraw = async () => {
     if (atm) {
       let tx = await atm.withdraw(1);
@@ -103,23 +103,10 @@ export default function HomePage() {
           <button onClick={deposit} className="btn">Deposit 1 ETH</button>
           <button onClick={withdraw} className="btn">Withdraw 1 ETH</button>
         </div>
-
-        <div className="burn-section">
-          <input
-            type="number"
-            min="0"
-            step="0.01"
-            placeholder="Amount to burn"
-            value={burnAmount}
-            onChange={(e) => setBurnAmount(e.target.value)}
-            className="input"
-          />
-          <button onClick={() => burn(burnAmount)} className="btn">Burn</button>
-        </div>
       </div>
     )
   }
-
+  //Gerard
   useEffect(() => { getWallet(); }, []);
 
   return (
@@ -128,55 +115,7 @@ export default function HomePage() {
         <header><h1>WELCOME TO JIGSAWPUZZLE'S ATM!</h1></header>
         {initUser()}
       </main>
-      <style jsx>{`
-        .main-container {
-          background-color: mintcream;
-          height: 100vh;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-        }
-        .container {
-          background-color: white;
-          padding: 20px;
-          border-radius: 10px;
-          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-          text-align: center;
-        }
-        header h1 {
-          color: #2c3e50;
-          font-family: 'Arial', sans-serif;
-        }
-        .user-details {
-          margin-top: 20px;
-        }
-        .buttons {
-          margin: 10px 0;
-        }
-        .btn {
-          background-color: #3498db;
-          color: white;
-          padding: 10px 20px;
-          margin: 5px;
-          border: none;
-          border-radius: 5px;
-          cursor: pointer;
-          font-size: 16px;
-        }
-        .btn:hover {
-          background-color: #2980b9;
-        }
-        .burn-section {
-          margin-top: 20px;
-        }
-        .input {
-          padding: 10px;
-          margin-right: 10px;
-          border-radius: 5px;
-          border: 1px solid #bdc3c7;
-        }
-      `}
-      </style>
     </div>
   )
 }
+  //Gerard
